@@ -17,7 +17,7 @@ const App = () => {
       <div className="flex h-[400px] relative bottom-4 items-end justify-center ">
         <motion.div
           layout
-          className="flex flex-col bg-neutral-300 p-4 rounded-b-md"
+          className="flex flex-col bg-neutral-300 p-4 rounded-b-md overflow-clip"
         >
           {isOpen && (
             <motion.div
@@ -33,7 +33,7 @@ const App = () => {
                 staggerChildren: 0.03,
                 delayChildren: 0.3,
               }}
-              className="mb-8  grid w-[600px] grid-cols-2 gap-4 *:rounded-xl *:bg-white *:px-4 *:py-2"
+              className="mb-8  grid w-[600px] grid-cols-2 gap-4 *:rounded-xl *:bg-neutral-300 *:px-4 *:py-2"
             >
               {portfolioLinks.map((linkTitle) => (
                 <motion.a
